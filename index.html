@@ -298,7 +298,11 @@
         <div>
           <h3>Installera skrivbordsappen</h3>
           <p>Ladda ner appen till datorn i stället för att bara köra AI:n i webbläsaren. Skrivbordsappen kan <b>läsa filer direkt på din maskin</b> utan att du laddar upp dem, och den kör connectors (steg 3).</p>
-          <p>Claude: hämta appen på claude.ai/download, för både Mac och Windows. ChatGPT har en egen skrivbordsapp på sin sida.</p>
+          <p>Gå till claude.ai/download och klicka på knappen för ditt system. Sidan visar rätt knapp för Windows och Mac.</p>
+          <figure class="fig">
+            <img src="images/steg1-ladda-ner.jpg" alt="Nedladdningssidan för Claude med knappen Download for Windows markerad">
+            <figcaption>Steg 1 · klicka på knappen för ditt system</figcaption>
+          </figure>
           <div class="crumbs">
             <span class="cb">claude.ai/download</span><span class="sep">→</span>
             <span class="cb">Ladda ner</span><span class="sep">→</span>
@@ -312,10 +316,21 @@
         <div>
           <h3>Skriv dina instruktioner en gång</h3>
           <p>Det här är rutan som gör mest skillnad. Skriv vem du är och hur du vill ha svaren, <b>en gång</b>, så börjar varje ny chatt med den kunskapen. Ditt jobb, din stad, hur rakt du vill ha svaren.</p>
-          <p>I Claude: klicka på dina initialer nere till vänster, välj Settings och skriv i rutan Instructions for Claude. I ChatGPT: Inställningar, sen Anpassning (Personalization) och Anpassade instruktioner. Mallen du klistrar in står längre ner på sidan.</p>
+          <p>Klicka på ditt namn längst ner till vänster <b>(1)</b> och välj <b>Settings (2)</b>.</p>
+          <figure class="fig">
+            <img src="images/steg2-meny.jpg" alt="Claude-appen med menyn öppen nere till vänster, ditt namn markerat och Settings markerat">
+            <figcaption>Steg 2 · ditt namn nere till vänster (1), sedan Settings (2)</figcaption>
+          </figure>
+          <p>Settings öppnas på <b>General</b>. Scrolla till rutan som heter <b>Instructions for Claude</b>. Det är där texten ska in.</p>
+          <figure class="fig">
+            <img src="images/steg2b-instruktioner.jpg" alt="Inställningssidan General i Claude med textrutan Instructions for Claude markerad">
+            <figcaption>Steg 2 · rutan Instructions for Claude, under General</figcaption>
+          </figure>
+          <p>I ChatGPT ligger samma sak under Inställningar, sen Anpassning (Personalization) och Anpassade instruktioner. Mallen du klistrar in står längre ner på den här sidan.</p>
           <div class="crumbs" data-slot="crumbs-step2">
-            <span class="cb">Dina initialer</span><span class="sep">→</span>
+            <span class="cb">Ditt namn</span><span class="sep">→</span>
             <span class="cb">Settings</span><span class="sep">→</span>
+            <span class="cb">General</span><span class="sep">→</span>
             <span class="cb">Instructions for Claude</span>
           </div>
         </div>
@@ -325,16 +340,16 @@
         <div class="step-n">3</div>
         <div>
           <h3>Koppla in dina appar</h3>
-          <p>Connectors låter AI:n läsa och agera inne i dina verktyg: Gmail, Google Drive, Kalender, och fler. När en app är inkopplad dyker den upp som en knapp under textrutan, som på bilden nedan.</p>
-          <p>På bilden ser du också var du gör de två andra sakerna: <b>plus-tecknet (1)</b> öppnar menyn, och <b>modellväljaren (2)</b> är steg 4.</p>
+          <p>Connectors låter AI:n läsa och agera inne i dina verktyg: Gmail, Google Drive, Kalender, och fler. En inkopplad app dyker sen upp som en knapp under textrutan.</p>
+          <p>Klicka på <b>plus-tecknet (1)</b> vid textrutan, välj <b>Connectors (2)</b> och sedan <b>Manage connectors (3)</b>. Där slår du på apparna en och en.</p>
           <figure class="fig">
-            <img src="images/steg-claude-ui.jpg" alt="Claudes textruta med plus-tecknet och modellväljaren markerade, och inkopplade appar som knappar under rutan">
-            <figcaption>Så ser det ut i Claude · plus-tecknet (1), modellväljaren (2), inkopplade appar under rutan</figcaption>
+            <img src="images/steg3-connectors.jpg" alt="Claude med plus-menyn öppen, Connectors valt och listan över appar med reglage">
+            <figcaption>Steg 3 · plus-tecknet (1), Connectors (2), Manage connectors (3)</figcaption>
           </figure>
           <div class="crumbs" data-slot="crumbs-step3">
-            <span class="cb">Customize</span><span class="sep">→</span>
+            <span class="cb">Plus-tecknet</span><span class="sep">→</span>
             <span class="cb">Connectors</span><span class="sep">→</span>
-            <span class="cb">Anslut appen</span>
+            <span class="cb">Manage connectors</span>
           </div>
           <div class="note blue"><span class="lb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span><span>Du bestämmer vilka appar AI:n får se, och du kan koppla bort dem när som helst. Börja med en, till exempel Gmail eller Drive, och lägg till fler när du märker vad du använder.</span></div>
         </div>
@@ -344,7 +359,12 @@
         <div class="step-n">4</div>
         <div>
           <h3>Välj rätt modell för uppgiften</h3>
-          <p>Ovanför textrutan finns en meny där du väljer modell (<b>märke 2</b> på bilden). Ta den tyngre modellen för svåra saker: resonemang, längre texter, kod. Ta den snabba för enkla uppslag och korta frågor.</p>
+          <p>Vid textrutan står namnet på modellen du kör. Klicka på namnet <b>(1)</b> så fälls listan ut <b>(2)</b>.</p>
+          <figure class="fig">
+            <img src="images/steg4-modell.jpg" alt="Claudes textruta med modellnamnet markerat och listan över modeller utfälld">
+            <figcaption>Steg 4 · klicka på modellnamnet (1), välj i listan (2)</figcaption>
+          </figure>
+          <p>Ta den tyngre modellen för svåra saker: resonemang, längre texter, kod. Ta den snabba för enkla uppslag och korta frågor.</p>
           <p>Den tunga tänker bättre, den snabba svarar fortare. Namnen byts ut med tiden, så gå efter det: en för att tänka, en för att gå fort.</p>
         </div>
       </div>
@@ -354,6 +374,11 @@
         <div>
           <h3>Skapa ett Project</h3>
           <p>Ett Project är ett eget rum för en del av ditt liv, med <b>egna instruktioner och egna filer</b> som bara gäller där. Perfekt för sånt som är sant just nu men inte för alltid: kunden du pitchar, CV:t du finslipar, kursen du läser.</p>
+          <p>Projects ligger i sidofältet. Klicka på <b>plus-tecknet</b> vid Projects för att skapa ett nytt.</p>
+          <figure class="fig">
+            <img src="images/steg5-projects.png" alt="Sidofältet i Claude med Projects markerat och plus-tecknet för nytt projekt">
+            <figcaption>Steg 5 · Projects i sidofältet, plus-tecknet skapar ett nytt</figcaption>
+          </figure>
           <div class="crumbs" data-slot="crumbs-step5">
             <span class="cb">Sidofältet</span><span class="sep">→</span>
             <span class="cb">Projects</span><span class="sep">→</span>
