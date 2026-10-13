@@ -200,6 +200,11 @@
   .protip h4{font-family:var(--serif);font-weight:600;font-size:20px;color:var(--ink);margin:12px 0 7px;}
   .protip p{font-size:15px;color:var(--text);line-height:1.6;}
   .protip p b{color:var(--ink);font-weight:600;}
+  /* Telefon: numret ovanför rubriken så att text och bilder får hela bredden (Judes besked 2026-10-13) */
+  @media(max-width:640px){
+    .step{grid-template-columns:minmax(0,1fr);gap:12px;padding:26px 0;}
+    .step-n{width:30px;height:30px;font-size:13px;}
+  }
 </style>
 </head>
 <body>
@@ -583,7 +588,7 @@ Vi säljer [vad] till [vem]. Mina begränsningar är [tid/pengar/team].
     </div>
 
     <figure class="fig reveal">
-      <img src="images/claude-prompt-bar.png" alt="Claudes textruta där du klistrar in prompten">
+      <img src="images/claude-prompt-bar.png?v=2" alt="Claudes textruta där du klistrar in prompten">
       <figcaption>Klistra in i textrutan i Claude</figcaption>
     </figure>
 
